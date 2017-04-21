@@ -15,7 +15,7 @@ class ClassesTableSeeder extends Seeder
         	'name'=>'The first year',
         ]);
 
-        DB::table('classes')-insert([
+        DB::table('classes')->insert([
         	'name'=>'The second year',
         ]);
     }

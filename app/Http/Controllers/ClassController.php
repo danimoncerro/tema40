@@ -3,13 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Class;
+use App\Class1;
 
 class ClassController extends Controller
 {
     public function index()
     {
-    	$classes = Class::all();
+    	$classes = Class1::all();
     	return view('classes.index', compact('classes'));
+    	//echo "hello world";
     }
 }
+
+
