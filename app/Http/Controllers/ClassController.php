@@ -11,7 +11,6 @@ class ClassController extends Controller
     {
     	$classes = Class1::all();
     	return view('classes.index', compact('classes'));
-    	//echo "hello world";
     }
 }
 

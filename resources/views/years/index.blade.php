@@ -5,10 +5,10 @@
 	<div class="container">
 	<div class="row">
 		<div class="col-md-12">
-			<h1>Studenti</h1>
+			<h1>Anii de studiu</h1>
 
 			<p>
-				<a href="/students/create" class="btn btn-success">
+				<a href="/years/create" class="btn btn-success">
 					Adauga
 				</a>
 			</p>
@@ -17,20 +17,18 @@
 			<tr>
 				<th>Id</th>
 				<th>Numele</th>
-				<th>Clasa</th>
 				<th>Actions</th>
 			</tr>
 
-			@foreach($students as $student)
+			@foreach($years as $year)
 				<tr>
-					<td>{{ $student->id }}</td>
-					<td>{{ $student->name }}</td>
-					<td>{{ $student->years_id }}</td>
+					<td>{{ $year->id }}</td>
+					<td>{{ $year->name }}</td>
 					<td>
-						<a href="/students/{{ $student->id }}/edit" class="btn btn-primary">
+						<a href="/years/{{ $year->id }}/edit" class="btn btn-primary">
 							Editeaza
 						</a>
-						<a href="/students/{{ $student->id }}/delete" class="btn btn-danger">
+						<a href="/years/{{ $year->id }}/delete" class="btn btn-danger">
 							Sterge
 						</a>
 					</td>

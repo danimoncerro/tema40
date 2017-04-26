@@ -19,7 +19,17 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/classes', 'ClassController@index');
+Route::get('/years', 'YearController@index');
+Route::get('/years/create', 'YearController@create');
+Route::get('/years/{id}/edit', 'YearController@edit');
+Route::post('/years/save', 'YearController@save');
+Route::get('/years/{id}/delete', 'YearController@delete');
+
 Route::get('/students', 'StudentController@index');
+Route::get('/students/{id}/edit', 'StudentController@edit');
+Route::post('/students/save', 'StudentController@save');
+Route::get('/students/{id}/delete', 'StudentController@delete');
+Route::get('/students/create', 'StudentController@create');
+
 
 
