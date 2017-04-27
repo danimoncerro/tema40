@@ -35,7 +35,7 @@ class StudentController extends Controller
     	}
 
     	$student->name = $request->name;
-    	$student->years_id = $request->years_id;
+    	$student->year_id = $request->year_id;
     	//dd($student);
     	$student->save();
 
@@ -54,6 +54,8 @@ class StudentController extends Controller
 
      public function create() 
     {
-    	return view('students.form_create');
+    	$years = Year::all();
+    	return view('students.form_create', compact('years'));
     }
 }
+

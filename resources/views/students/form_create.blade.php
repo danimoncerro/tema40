@@ -11,8 +11,19 @@
 					<input type="text" name="name" placeholder="Introduceti numele studentului">
 					<br>
 					<label>Id anul de studiu: </label>
-					<input type="text" name="years_id" placeholder="Introduceti id-ul anlui de studiu">
+					<select name="year_id">
+						@foreach ($years as $year)
+							<option value="{{ $year->id }}">
+								{{ $year->name}} 
+							</option>
+						@endforeach 
+					</select>
+
 				</p>
+
+				
+				<br><br>
+
 				<input type="submit" name="submit" value="Adauga student">
 
 			</form>

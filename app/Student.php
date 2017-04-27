@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Student extends Model
 {
-    public function class()
+    public function year()
     {
     	return $this->belongsTo('App\Year');
     }

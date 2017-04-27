@@ -14,16 +14,18 @@
 					{{-- <label>Id clasa: </label>
 					<input type="text" name="years_id" value="{{ $student->years_id }}"> --}}
 				</p>
-				<input type="submit" name="submit" value="salveaza">
+				
 					
-					<select name="years_id">
+					<select name="year_id">
 						@foreach ($years as $year)
 							<option value="{{ $year->id }}" 
-								@if ($student->years_id == $year->id) selected @endif > 
+								@if ($student->year_id == $year->id) selected @endif > 
 								{{ $year->name}} 
 							</option>
 						@endforeach 
 					</select>
+					<br>
+					<input type="submit" name="submit" value="salveaza">
 			</form>
 		</div>
 	</div>

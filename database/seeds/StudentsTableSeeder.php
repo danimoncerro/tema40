@@ -13,12 +13,12 @@ class StudentsTableSeeder extends Seeder
     {
         DB::table('students')->insert([
         	'name'=>'Giurgiu Aurel',
-        	'years_id'=>'1',
+        	'year_id'=>'1',
         ]);
 
         DB::table('students')->insert([
         	'name'=>'Pop Loredana',
-        	'years_id'=>'2',
+        	'year_id'=>'2',
         ]);
     }
 }

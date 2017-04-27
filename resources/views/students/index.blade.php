@@ -25,7 +25,7 @@
 				<tr>
 					<td>{{ $student->id }}</td>
 					<td>{{ $student->name }}</td>
-					<td>{{ $student->years_id }}</td>
+					<td>{{ $student->year->name }}</td>
 					<td>
 						<a href="/students/{{ $student->id }}/edit" class="btn btn-primary">
 							Editeaza
